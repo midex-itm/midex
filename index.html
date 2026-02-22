@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/midex/">
     <title>MidEx | Design Studio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -1115,7 +1116,6 @@
         <!-- Profile Section -->
         <div class="profile-section">
             <div class="profile-image">
-                <!-- Your Logo - Replace src with your actual logo -->
                 <img src="logo.jpg" alt="MidEx Logo">
             </div>
             <h1 class="profile-name">MidEx</h1>
@@ -1268,7 +1268,7 @@
                 <p>mobile & web applications</p>
                 <div class="media-preview">
                     <span class="media-badge"><i class="fas fa-image"></i> 0</span>
-                    <span class="media-badge"><i class="fas fa-video"></i>0 </span>
+                    <span class="media-badge"><i class="fas fa-video"></i> 0</span>
                 </div>
             </div>
         </div>
@@ -1304,7 +1304,7 @@
             }, 1500);
         });
 
-        // MEDIA DATA - ONLY websites, system, app, and course books have text
+        // MEDIA DATA - ONLY websites, system, and course books have text
         const mediaData = {
             // NO TEXT for CV
             cv: {
@@ -1340,9 +1340,8 @@
                     { src: 'videos/pr5.mp4' }
                 ]
             },
-            // TEXT for Websites - FIXED: Added image with text
+            // TEXT for Websites
             websites: {
-               
                 videos: [
                     { 
                         src: 'videos/web.MOV', 
@@ -1351,7 +1350,7 @@
                     },
                     { 
                         src: 'videos/web2.MOV', 
-                        title: 'لێگەریان ل کاری - Job Search', 
+                        title: 'لێگەریان ل کاری', 
                         description: 'وێبسایتەک بۆ لێگەریان ل کاری. دەتوانی زانیاری لسەر کاران ببینیت و CV ی خۆ بنێریت' 
                     }
                 ]
@@ -1367,13 +1366,12 @@
                     { src: 'videos/re2.mp4' }
                 ]
             },
-            // TEXT for Course Books - FIXED: Added image
+            // TEXT for Course Books
             coursebooks: {
-             
                 videos: [
                     { 
                         src: 'videos/mal.MP4', 
-                        title: 'بیرکاری - Math Course', 
+                        title: 'بیرکاری', 
                         description: 'دروستکرنا مەلزەمەکا گەلەک سادە و پری وێنە بوو زاروکان' 
                     }
                 ]
@@ -1389,9 +1387,8 @@
                     { src: 'images/m6.png' }
                 ]
             },
-            // TEXT for System - FIXED: Added images
+            // TEXT for System
             system: {
-             
                 videos: [
                     { 
                         src: 'videos/sys.MOV', 
@@ -1405,7 +1402,7 @@
                     }
                 ]
             },
-            // TEXT for App
+            // TEXT for App - Empty
             app: {
                 // Empty - will show no media
             }
