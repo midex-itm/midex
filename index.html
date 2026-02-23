@@ -1303,110 +1303,109 @@
             }, 1500);
         });
 
-        // MEDIA DATA - ONLY websites, system, and course books have text
-      // MEDIA DATA - FIXED with correct file extensions
-const mediaData = {
-    // NO TEXT for CV
-    cv: {
-        images: [
-            { src: 'midex/cv.jpg' },
-            { src: 'midex/cv2.jpg' },
-            { src: 'midex/cv3.jpg' },
-            { src: 'midex/cv4.jpg' },
-            { src: 'midex/cv5.jpg' },
-            { src: 'midex/cv6.jpg' }
-        ]
-    },
-    // NO TEXT for Reports
-    reports: {
-        images: [
-            { src: 'midex/rep.jpg' },
-            { src: 'midex/rep2.jpg' },
-            { src: 'midex/rep3.jpg' },
-            { src: 'midex/rep4.jpg' }
-        ],
-        videos: [
-            { src: 'midex/rep.mp4' },
-            { src: 'midex/rep (2).mp4' }
-        ]
-    },
-    // NO TEXT for Presentations
-    presentations: {
-        videos: [
-            { src: 'midex/pr.mp4' },
-            { src: 'midex/pr2.mp4' },
-            { src: 'midex/pr3.mp4' },
-            { src: 'midex/pr4.mp4' },
-            { src: 'midex/pr5.mp4' }
-        ]
-    },
-    // TEXT for Websites
-    websites: {
-        videos: [
-            { 
-                src: 'midex/web.MOV', 
-                title: 'بەدینی فارم', 
-                description: 'وێبسایتەک بۆ زانیاری لسەر دەرمان و نەخۆشییان' 
+        // MEDIA DATA - FIXED with correct paths including /images/ and /videos/
+        const mediaData = {
+            // NO TEXT for CV
+            cv: {
+                images: [
+                    { src: '/midex/images/cv.jpg' },
+                    { src: '/midex/images/cv2.jpg' },
+                    { src: '/midex/images/cv3.jpg' },
+                    { src: '/midex/images/cv4.jpg' },
+                    { src: '/midex/images/cv5.jpg' },
+                    { src: '/midex/images/cv6.jpg' }
+                ]
             },
-            { 
-                src: 'midex/web2.MOV', 
-                title: 'لێگەریان ل کاری', 
-                description: 'وێبسایتەک بۆ لێگەریان ل کاری' 
-            }
-        ]
-    },
-    // NO TEXT for Ads
-    ads: {
-        // Empty
-    },
-    // NO TEXT for Research
-    research: {
-        videos: [
-            { src: 'midex/re1.mp4' },
-            { src: 'midex/re2.mp4' }
-        ]
-    },
-    // TEXT for Course Books
-    coursebooks: {
-        videos: [
-            { 
-                src: 'midex/mal.MP4', 
-                title: 'بیرکاری', 
-                description: 'دروستکرنا مەلزەمەکا گەلەک سادە' 
-            }
-        ]
-    },
-    // NO TEXT for Menus - FIXED: Changed .png to .PNG to match your files
-    menus: {
-        images: [
-            { src: 'midex/m.PNG' },     // Changed from m.png to m.PNG
-            { src: 'midex/m2.png' },    // Keep as is if file is m2.png
-            { src: 'midex/m3.png' },    // Keep as is if file is m3.png
-            { src: 'midex/m4.PNG' },    // Changed from m4.png to m4.PNG
-            { src: 'midex/m5.PNG' },    // Changed from m5.png to m5.PNG
-            { src: 'midex/m6.png' }     // Keep as is if file is m6.png
-        ]
-    },
-    // TEXT for System
-    system: {
-        videos: [
-            { 
-                src: 'midex/sys.MOV', 
-                title: 'سیستەمێ قوتابخانێ', 
-                description: 'سیستەمێ قوتابخانێ بۆ پولا ١ هەتا ١٢' 
+            // NO TEXT for Reports
+            reports: {
+                images: [
+                    { src: '/midex/images/rep.jpg' },
+                    { src: '/midex/images/rep2.jpg' },
+                    { src: '/midex/images/rep3.jpg' },
+                    { src: '/midex/images/rep4.jpg' }
+                ],
+                videos: [
+                    { src: '/midex/videos/rep.mp4' },
+                    { src: '/midex/videos/rep (2).mp4' }
+                ]
             },
-            { 
-                src: 'midex/sys2.MOV', 
-                title: 'سیستەمێ خوارنگەهێ', 
-                description: 'سیستەمێ خوارنگەهێ' 
+            // NO TEXT for Presentations
+            presentations: {
+                videos: [
+                    { src: '/midex/videos/pr.mp4' },
+                    { src: '/midex/videos/pr2.mp4' },
+                    { src: '/midex/videos/pr3.mp4' },
+                    { src: '/midex/videos/pr4.mp4' },
+                    { src: '/midex/videos/pr5.mp4' }
+                ]
+            },
+            // TEXT for Websites
+            websites: {
+                videos: [
+                    { 
+                        src: '/midex/videos/web.MOV', 
+                        title: 'بەدینی فارم', 
+                        description: 'وێبسایتەک بۆ زانیاری لسەر دەرمان و نەخۆشییان' 
+                    },
+                    { 
+                        src: '/midex/videos/web2.MOV', 
+                        title: 'لێگەریان ل کاری', 
+                        description: 'وێبسایتەک بۆ لێگەریان ل کاری' 
+                    }
+                ]
+            },
+            // NO TEXT for Ads
+            ads: {
+                // Empty
+            },
+            // NO TEXT for Research
+            research: {
+                videos: [
+                    { src: '/midex/videos/re1.mp4' },
+                    { src: '/midex/videos/re2.mp4' }
+                ]
+            },
+            // TEXT for Course Books
+            coursebooks: {
+                videos: [
+                    { 
+                        src: '/midex/videos/mal.MP4', 
+                        title: 'بیرکاری', 
+                        description: 'دروستکرنا مەلزەمەکا گەلەک سادە' 
+                    }
+                ]
+            },
+            // NO TEXT for Menus - Using correct case for .PNG files
+            menus: {
+                images: [
+                    { src: '/midex/images/m.PNG' },
+                    { src: '/midex/images/m2.png' },
+                    { src: '/midex/images/m3.png' },
+                    { src: '/midex/images/m4.PNG' },
+                    { src: '/midex/images/m5.PNG' },
+                    { src: '/midex/images/m6.png' }
+                ]
+            },
+            // TEXT for System
+            system: {
+                videos: [
+                    { 
+                        src: '/midex/videos/sys.MOV', 
+                        title: 'سیستەمێ قوتابخانێ', 
+                        description: 'سیستەمێ قوتابخانێ بۆ پولا ١ هەتا ١٢' 
+                    },
+                    { 
+                        src: '/midex/videos/sys2.MOV', 
+                        title: 'سیستەمێ خوارنگەهێ', 
+                        description: 'سیستەمێ خوارنگەهێ' 
+                    }
+                ]
+            },
+            // TEXT for App
+            app: {
+                // Empty
             }
-        ]
-    },
-    // TEXT for App
-    app: {
-        // Empty
-    }
-};
+        };
 
         // Fullscreen viewer variables
         const fullscreenViewer = document.getElementById('fullscreenViewer');
@@ -1713,7 +1712,3 @@ const mediaData = {
     </script>
 </body>
 </html>
-
-
-
-
